@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "name": "lokesh",
+      "username": "lokeshpathrabe",
+      "mail": "lokesh@gmail.com",
+      "phone": "9208750897",
+      "id": 1
+    },
+    {
+      "name": "Tai",
+      "username": "alal",
+      "mail": "alal@gmail.com",
+      "phone": "123456789",
+      "id": 2
+    },
+    {
+      "name": "mom",
+      "username": "momma",
+      "mail": "mom@gmail.com",
+      "phone": "9999976756",
+      "id": 3
+    },
+    {
+      "name": "prarthnaKar",
+      "username": "7 vajle",
+      "mail": "PrarthnaKar@gmail.com",
+      "phone": "7346592783",
+      "id": 4
+    },
+    {
+      "name": "JUMDEOJI THUBRIKAR",
+      "username": "baba",
+      "mail": "parmataeksevakmandal@gmail.com",
+      "phone": "09021565192",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+:root{
+  /* --tablehead:lime;
+  --tablecolor:palegreen;
+  --textheadcolor:black; */
+  --tablehead:black;
+  --tablecolor:rgba(255,255,255,0.5);
+  --textheadcolor:white;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* table-layout: fixed; */
+  }
+
+  .table-users {
+    border-radius: 10px;
+    /* box-shadow: 3px 3px 0 rgba(0,0,0,0.1); */
+    max-width: calc(100% - 2em);
+    margin: 1em auto;
+ }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: var(--tablecolor);
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+
+  table td{
+      background-color:  var(--tablecolor);
+  }
+  
+  table th {
+    background-color: var(--tablehead);
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color:var(--textheadcolor);
+  }
+  
+  @media screen and (max-width: 900px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid var(--tablecolor);
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid var(--tablecolor);
+      display: block;
+      font-size: .8em;
+      text-align: right;
+      font-weight: bold;
+    }
+
+    table tbody tr td:first-child { 
+      background: var(--tablehead); 
+      color: var(--textheadcolor); 
+    }
+
+    
+    table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }

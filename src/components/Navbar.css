@@ -1,0 +1,11 @@
+.MuiToolbar-root,.MuiToolbar-regular,.MuiToolbar-gutters{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg,rgb(30, 208, 221),rgb(184, 22, 216));
+}
+@media screen and (max-width: 900px) {
+.hide{
+    display: none;
+}
+}
